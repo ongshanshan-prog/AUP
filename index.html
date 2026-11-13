@@ -546,11 +546,11 @@ let SCENES = [
    ],
    qs:[
     {type:"mc", prompt:"Mr Lim is teaching. Wei Ming sends Xiao Nan a funny meme. What should Xiao Nan do?",
-     options:["Reply quickly with a laughing emoji","Ignore it, keep paying attention, and use Ah Pad only when Mr Lim asks","Forward it to the class group chat","Screenshot it to look at later in the lesson"], answer:1,
-     explain:"Your PLD is for learning, not for unnecessary chatting with schoolmates. Pay full attention and use it only when your teacher asks. Devices used for unrelated things in class may be confiscated."},
-    {type:"multi", prompt:"Which of these use Ah Pad for the correct purpose during a lesson?", hint:"Select all that apply.",
+     options:["Reply quickly with a laughing emoji","Ignore it, stay focused in class","Forward it to classmates by email","Screenshot it to look at later in the lesson"], answer:1,
+     explain:"Your PLD is for learning, not for chatting with friends. Pay full attention in class and use your PLD only when your teacher asks you to. A device used for unrelated activities during a lesson may be confiscated."},
+    {type:"multi", prompt:"Which of these are correct ways to use Ah Pad during a lesson?", hint:"Select all that apply.",
      options:[{t:"Taking notes when the teacher asks you to",ok:true},{t:"Watching YouTube while the teacher is talking",ok:false},{t:"Doing the Google Form quiz the teacher assigned",ok:true},{t:"Playing a game because you finished your work early",ok:false},{t:"Messaging a classmate about weekend plans",ok:false}],
-     explain:"Notes and assigned tasks are learning. Videos, games and chats during class are not, even if you finished early."}
+     explain:"Taking notes and doing assigned tasks are part of learning. Watching videos, playing games and chatting during class are not, even if you have finished your work early."}
    ],
    reveal:"Xiao Nan swiped the meme away and used Ah Pad only for notes and the class quiz. (Wei Ming kept sending memes, and Mr Lim confiscated <b>his</b> iPad!)",
    revealMood:"happy",
@@ -565,14 +565,14 @@ let SCENES = [
    ],
    qs:[
     {type:"mc", prompt:"Ah Pad is at 23% the night before school. What should Xiao Nan do?",
-     options:["Charge him at a school power point during recess","Leave it. 23% is enough for a whole day","Charge him fully at home tonight","Bring the charger and plug in during class"], answer:2,
-     explain:"Bring your PLD to school fully charged every day. Charging on school grounds is not allowed."},
-    {type:"mc", prompt:"Xiao Nan has a long CCA day tomorrow. Which of these is allowed in school?",
-     options:["Bringing a power bank","Plugging into the classroom socket","Charging at the canteen socket","Asking a friend to charge it in the staff room"], answer:0,
-     explain:"Power banks are allowed if you need them. Charging on school grounds is not."},
+     options:["Leave him in class to charge during recess","Leave him as he is. 23% will last the whole day","Charge him fully at home tonight","Bring the charger and plug him in during class"], answer:2,
+     explain:"It is your responsibility to bring your PLD to school fully charged every day. Charging on school grounds is not allowed."},
+    {type:"mc", prompt:"Xiao Nan has a long CCA day tomorrow and is worried Ah Pad will run low. Which of these is allowed in school?",
+     options:["Bringing a power bank","Plugging into the classroom socket","Charging at the canteen socket","Asking a friend to charge him in the staff room"], answer:0,
+     explain:"You may bring a power bank if you need extra charge, but you may not charge your PLD on school grounds."},
     {type:"multi", prompt:"Before sleeping, Xiao Nan wants to keep Ah Pad and the science project safe. Which habits help?", hint:"Select all that apply.",
      options:[{t:"Backing up class files so there's a spare copy",ok:true},{t:"Installing the iPadOS update from the Settings app",ok:true},{t:"Turning off updates forever so they don't interrupt",ok:false},{t:"Keeping the only copy of the project on Ah Pad",ok:false}],
-     explain:"Back up class files regularly in case the original is lost, and keep your device running smoothly by updating software through Settings."}
+     explain:"Back up class files regularly in case the original is lost, and keep your device running smoothly by installing software updates through the Settings app."}
    ],
    reveal:"Xiao Nan remembered the rule, plugged Ah Pad in at home, installed the update, and backed up the science project to the cloud. <i>Remember this. It matters later!</i>",
    revealMood:"cheer",
@@ -586,22 +586,22 @@ let SCENES = [
      {who:"ap", mood:"worried", text:"But Ms Wong notices <b>everything</b>..."}
    ],
    qs:[
-    {type:"call", prompt:"This is Xiao Nan's screen in the English lesson. Tap everything Xiao Nan got wrong.", hint:"Tap a label to flag it. Tap again to unflag. Some are fine.",
+    {type:"call", prompt:"This is Xiao Nan's screen during an online English lesson. Tap everything he got wrong.", hint:"Tap a label to flag it. Tap again to unflag. Some are fine.",
      items:[
       {id:"late", pos:"c-tl", label:"Joined 9:12 am", bad:true, why:"Join online lessons on time. The lesson started at 9:00 am."},
       {id:"cam", pos:"c-tr", label:"Camera on", bad:false, why:"Keeping the camera on is correct."},
-      {id:"name", pos:"c-bl", label:"xiaonan_gamer99", bad:true, why:"Display names use [Class] [Name], e.g. “103 Xiao Nan”."},
+      {id:"name", pos:"c-bl", label:"xiaonan_gamer99", bad:true, why:"Your display name should follow the format [Class] [Name], e.g. “103 Xiao Nan”."},
       {id:"mic", pos:"c-br", label:"Mic on", bad:true, why:"Keep the mic muted unless it's your turn to speak."},
       {id:"pj", pos:"x", label:"Outfit: pyjama top", bad:true, why:"Wear proper school attire for online lessons."},
       {id:"bg", pos:"x", label:"Background: plain wall", bad:false, why:"A plain background is fine."},
       {id:"chat", pos:"chat", label:"HELLO?? CAN I TALK NOW???", bad:true, why:"Use the “raise hand” feature to ask to speak."}
      ]},
-    {type:"mc", prompt:"Xiao Nan was absent on Thursday. What is the best way for him to find out what was assigned?",
-     options:["Wait for the teacher to remind him next week","Check Google Classroom (or the platform the teacher uses)","Ask a friend to send their answers","Nothing. Absent means no homework"], answer:1,
-     explain:"Track your assignments on Google Classroom or the platform your teacher uses, especially when you are absent."},
+    {type:"mc", prompt:"If Xiao Nan is absent from school, what is the best way for him to find out what work was assigned?",
+     options:["Wait for the teacher to remind him next week","Check Google Classroom (or the platform the teacher uses)","Ask a friend to send their answers","Nothing. Being absent means no homework"], answer:1,
+     explain:"Keep track of your assignments on Google Classroom or the platform your teacher uses, especially when you are absent."},
     {type:"mc", prompt:"Next week, Xiao Nan joins a video call with students from another school. Which display name is correct?",
      options:["Xiao Nan","103 Xiao Nan","Nan Hua High School 103 Xiao Nan","ML_103_official"], answer:2,
-     explain:"Use [Class] [Name]. When the call includes people from outside the school, add the school name too."}
+     explain:"Use [Class] [Name]. When the call includes people from outside the school, add the school name in front."}
    ],
    reveal:"Ms Wong noticed everything. Xiao Nan had to rename, mute, and change into school uniform in the middle of the lesson. How embarrassing!",
    revealMood:"worried",
@@ -615,11 +615,11 @@ let SCENES = [
      {who:"ap", mood:"think", text:"Hmm... I'm a <b>learning</b> companion, not a homework machine."}
    ],
    qs:[
-    {type:"multi", prompt:"Which of these are acceptable ways for Xiao Nan to use AI for the essay?", hint:"Select all that apply.",
-     options:[{t:"Brainstorming ideas for the topic",ok:true},{t:"Asking it to explain a hard concept",ok:true},{t:"Making an outline, then writing the essay in your own words",ok:true},{t:"Getting it to write the whole essay and submitting that",ok:false},{t:"Copying an AI paragraph without saying where it came from",ok:false}],
-     explain:"Use AI to brainstorm, outline or explain things, but don't let it do the thinking for you. Passing off AI work as your own is plagiarism."},
-    {type:"mc", prompt:"Xiao Nan used AI to brainstorm ideas. What must Xiao Nan do when submitting?",
-     options:["Nothing. Brainstorming doesn't count","Clearly cite the AI-generated content in the assignment","Delete the chat history","Change the words so the teacher can't tell"], answer:1,
+    {type:"multi", prompt:"Which of these are acceptable ways for Xiao Nan to use AI for his essay?", hint:"Select all that apply.",
+     options:[{t:"Brainstorming ideas for the topic",ok:true},{t:"Asking it to explain key phrases he does not understand",ok:true},{t:"Making an outline, then writing the essay in his own words",ok:true},{t:"Getting it to write the whole essay and submitting that",ok:false},{t:"Copying an AI paragraph without saying where it came from",ok:false}],
+     explain:"Use AI to brainstorm, outline or explain ideas, but don't let it do the thinking for you. Passing off AI-generated work as your own is plagiarism."},
+    {type:"mc", prompt:"Xiao Nan used AI to brainstorm ideas for his essay. What must he do when he submits it?",
+     options:["Nothing. Brainstorming doesn't count","Clearly cite the AI-generated content in his assignment","Delete the chat history","Change the words so the teacher can't tell"], answer:1,
      explain:"Clearly cite any AI-generated content you use in an assignment."}
    ],
    reveal:"Xiao Nan used AI only to brainstorm, wrote the essay in {their} own words, and cited the AI. (Wei Ming handed in an AI-written essay... and now has to redo it.)",
@@ -635,14 +635,14 @@ let SCENES = [
    ],
    qs:[
     {type:"mc", prompt:"The recess bell rings. Where should Ah Pad go?",
-     options:["Stay on the desk with Wei Ming “looking after” him","Into Xiao Nan's bag before Xiao Nan leaves the classroom","On the desk. The class will be locked","Onto the canteen table to save a seat"], answer:1,
-     explain:"Keep your PLD in your bag before you leave the classroom for breaks or room changes. Never leave it unattended on a desk."},
+     options:["On the desk, with Wei Ming “looking after” him","In Xiao Nan's bag, before Xiao Nan leaves the classroom","On the desk, since the classroom will be locked","On a canteen table, to reserve a seat"], answer:1,
+     explain:"Put your PLD in your bag before you leave the classroom for breaks or room changes. Never leave it unattended on a desk."},
     {type:"mc", prompt:"At the canteen, Chelsea does a funny dance. Xiao Nan wants to film it. What should Xiao Nan do first?",
      options:["Just film it. Chelsea is a friend","Film it and post it only to close friends","Ask Chelsea, and anyone else in the shot, for permission","Film it secretly and delete it later"], answer:2,
-     explain:"Always ask your classmates and teachers for permission before taking photos or videos of them."},
-    {type:"mc", prompt:"After PE, Chelsea can't find her iPad. What should she do first?",
-     options:["Report it to the General Office immediately","Wait a few days. It might turn up","Post about it on social media","Quietly borrow someone else's"], answer:0,
-     explain:"Report a lost PLD to the General Office immediately so your form teacher and the ICT office can be told."}
+     explain:"Always ask for permission before taking photos or videos of your classmates or teachers."},
+    {type:"mc", prompt:"After PE, Chelsea can't find her iPad. What should she do?",
+     options:["Stay calm and retrace her steps. If she still can’t find it, report it to the General Office.","Stay calm and wait a few days. It might turn up.","Post about it on social media and in the class group chat.","Quietly borrow someone else's iPad for class."], answer:0,
+     explain:"Report a lost PLD to the General Office so that your form teacher and the ICT office can be informed."}
    ],
    reveal:"Xiao Nan said “No thanks!” and zipped Ah Pad into the bag before going to recess. Ah Pad was never left alone.",
    revealMood:"happy",
@@ -657,14 +657,14 @@ let SCENES = [
    ],
    qs:[
     {type:"mc", prompt:"gamer_pro88 also starts posting mean edited photos of a classmate in the chat. What should Xiao Nan do?",
-     options:["Add a laughing reaction so nobody gets upset","Report it to a Tech Champion or a trusted adult, like a teacher","Leave the chat and forget about it","Post a mean photo of gamer_pro88 back"], answer:1,
-     explain:"Report any cyberbullying you experience or see straight away to the Tech Champions or a trusted adult."},
+     options:["Add a laughing reaction so nobody gets upset","Report it to a trusted adult, such as a parent or teacher","Leave the chat and forget about it","Post a mean photo of gamer_pro88 back"], answer:1,
+     explain:"If you experience or witness cyberbullying, report it to a trusted adult straight away."},
     {type:"mc", prompt:"gamer_pro88 wants Xiao Nan's home address to send a “free gift”. What should Xiao Nan do?",
-     options:["Send it. Free gifts are great","Send only the postal code","Don't share it. Personal info stays private","Ask gamer_pro88 to promise first"], answer:2,
-     explain:"Never share personal information online unless it is through trusted and verified sources."},
-    {type:"mc", prompt:"The “new number” says it's Wei Ming and asks for Xiao Nan's Google password. What should Xiao Nan do?",
-     options:["Share it. It's Wei Ming","Say no. Accounts are not for sharing, even with friends","Share it, then change it next month","Ask them to prove it's Wei Ming, then share it"], answer:1,
-     explain:"Don't share your accounts with anyone, so you stay in control of them. Real friends never need your password."}
+     options:["Send it. Free gifts are great","Send only the postal code","Don't share it. Personal information stays private","Ask gamer_pro88 to promise first"], answer:2,
+     explain:"Never share personal information online, except with trusted and verified sources."},
+    {type:"mc", prompt:"A message from a “new number” claims to be from Wei Ming and asks for Xiao Nan's Google password. What should Xiao Nan do?",
+     options:["Share it. Wei Ming is his friend","Say no. Accounts are not for sharing, even with friends","Share it, then change it next month","Ask them to prove they are Wei Ming, then share it"], answer:1,
+     explain:"Don't share your accounts with anyone, so that you stay in control of them. A real friend will never ask for your password."}
    ],
    reveal:"Xiao Nan reported the mean photos to Kai the Tech Champion and refused to share the address or the password. Later, Kai found out the “new number” was really <b>gamer_pro88</b> pretending to be Wei Ming!",
    revealMood:"surprised",
@@ -678,12 +678,12 @@ let SCENES = [
      {who:"xn", text:"Just one tap... what's the worst that can happen?"}
    ],
    qs:[
-    {type:"mc", prompt:"What should Xiao Nan do with gamer_pro88's link?",
-     options:["Tap it quickly just to see","Forward it to friends so they can try","Don't tap it. Check if it's safe, and tell a teacher about it","Tap it, but only after midnight when nobody's checking"], answer:2,
-     explain:"Check that a link is safe before you tap it. Messages promising free unlocks or prizes are a common trick."},
-    {type:"mc", prompt:"Imagine Xiao Nan already tapped it and Ah Pad started acting strangely. What should Xiao Nan do?",
+    {type:"mc", prompt:"gamer_pro88 sends Xiao Nan a link. What should Xiao Nan do with it?",
+     options:["Tap it quickly just to see","Forward it to friends so they can try","Don't tap it. Check whether it's safe, and tell a teacher about it","Tap it, but only after midnight when nobody's checking"], answer:2,
+     explain:"Always check that a link is safe before you tap it. Messages promising free unlocks or prizes are a common scam."},
+    {type:"mc", prompt:"Suppose Xiao Nan had already tapped the link and Ah Pad started acting strangely. What should Xiao Nan do?",
      options:["Keep quiet and hope it goes away","Delete the browser history so nobody finds out","Tell a teacher straight away","Try another “fix” link from the same website"], answer:2,
-     explain:"If you open a suspicious link, or your information may have been leaked, tell a teacher immediately. Hiding it only makes things worse."}
+     explain:"If you open a suspicious link, or think your information may have been leaked, tell a teacher immediately. Hiding it only makes things worse."}
    ],
    reveal:"Xiao Nan tapped it. Ah Pad's screen flashed. A pop-up asked <b>“Remove profile?”</b> and Xiao Nan pressed OK... then went to sleep and told <b>nobody</b>.",
    revealMood:"sad",
@@ -698,14 +698,14 @@ let SCENES = [
    ],
    qs:[
     {type:"mc", prompt:"Which statement about the DMA (the school's device management app) is true?",
-     options:["You can remove it on weekends","Every iPad used in school must have the DMA, and bypassing it is not allowed","It's only needed during exams","Removing it is fine if you put it back before school"], answer:1,
-     explain:"Every PLD used in school must have the DMA installed. Bypassing it in any way is not allowed."},
+     options:["You can remove it on weekends and holidays","Every iPad used in school must have the DMA, and bypassing it is not allowed","It's only needed during school hours and exams","Removing it is fine if you put it back before school"], answer:1,
+     explain:"Every PLD used in school must have the DMA installed, and bypassing it in any way is not allowed."},
     {type:"mc", prompt:"What happens to an iPad found with the DMA bypassed?",
      options:["Nothing, if it still works","A verbal warning only","It is wiped and reinstalled with the DMA","The student gets a new iPad"], answer:2,
-     explain:"If the DMA is bypassed, the device will be wiped and the DMA reinstalled. Any files that weren't backed up are lost."},
-    {type:"mc", prompt:"Next time Ah Pad has a technical problem, where should Xiao Nan go for help?",
-     options:["A “jailbreak fix” video online","Ask gamer_pro88","The ICT staff at WizHub or the Tech Champions","Nowhere. Just ignore it"], answer:2,
-     explain:"Go to the friendly ICT staff at WizHub or the Tech Champions for tech support or other help."}
+     explain:"If the DMA is bypassed, the device will be wiped and the DMA reinstalled. Any files that were not backed up will be lost."},
+    {type:"mc", prompt:"The next time Ah Pad has a technical problem, where should Xiao Nan go for help?",
+     options:["A “jailbreak fix” video online","gamer_pro88","The ICT staff at WizHub or the Tech Champions","Nowhere. He should just ignore it"], answer:2,
+     explain:"Go to the friendly ICT staff at WizHub or a Tech Champion for tech support or any other help."}
    ],
    reveal:"Mr Tan's scan shows exactly when it happened: the DMA profile was removed at <b>11:51 pm on Thursday</b>, three minutes after the link was opened.",
    revealMood:"surprised",
@@ -715,8 +715,8 @@ let SCENES = [
 
 let DEDUCE = [
   {prompt:"Part 1: Why was Ah Pad summoned to WizHub?",
-   options:["He was used for memes in class","He was charged in school","His DMA was removed after Xiao Nan tapped a suspicious link","Xiao Nan used AI to write an essay"], answer:2,
-   ok:"Yes! The link was opened at 11:48 pm, and the DMA was removed at 11:51 pm. Every other memory was stamped “Not the reason”.",
+   options:["He was used to send memes in class","He was charged in school","His DMA was removed after Xiao Nan tapped a suspicious link","Xiao Nan used AI to write an essay"], answer:2,
+   ok:"Yes! The link was opened at 11:48 pm, and the DMA was removed just three minutes later, at 11:51 pm. Every other memory was stamped “Not the reason”.",
    no:"Look at the stamps. Only Memory 7 (suspicious link) and Memory 8 (DMA removed) were red. The link was opened at 11:48 pm and the DMA was gone by 11:51 pm."},
   {prompt:"Part 2: What should Xiao Nan have done to stop this from happening?",
    options:["Tapped the link during the day instead of at night","Not tapped the link, and told a teacher about the message","Shared the link with friends first","Deleted the browser history afterwards"], answer:1,
